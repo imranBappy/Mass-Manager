@@ -11,11 +11,12 @@ export default function SignIn() {
     email: "",
     password: "",
   });
+  
 
   return (
     <View style={styles.root}>
       <Text style={[styles.text, { marginTop: 50 }]} category="h1">
-        Match Manager
+        Mass Manager
       </Text>
       <View style={styles.formWrap}>
         <Input
@@ -55,7 +56,7 @@ export default function SignIn() {
             setUser((preState) => ({ ...preState, password: nextValue }))
           }
         />
-        <Button>Register</Button>
+        <Button style={{marginTop:10}}>Register</Button>
         {/* <Text style={styles.text}>
           <Link href="/forget">Forgotter Password?</Link>
         </Text> */}
@@ -85,7 +86,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   formWrap: {
-    gap: 15,
+    gap: 10,
     height: "70%",
   },
   footer: {

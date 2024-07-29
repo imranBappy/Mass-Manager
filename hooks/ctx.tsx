@@ -9,7 +9,7 @@ const AuthContext = createContext<{
 }>({
   signIn: () => null,
   signOut: () => null,
-  session: 'null',
+  session: null,
   isLoading: false,
 });
 

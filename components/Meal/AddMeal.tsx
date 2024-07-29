@@ -1,7 +1,6 @@
-import { Pressable, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import React from "react";
 import { Button, Card, Text, Modal, CheckBox } from "@ui-kitten/components";
-import { Toggle } from "@ui-kitten/components";
 import { Entypo } from "@expo/vector-icons";
 import { useTheme } from "@ui-kitten/components/theme";
 type Props = {};

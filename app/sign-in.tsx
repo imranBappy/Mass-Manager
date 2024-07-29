@@ -13,7 +13,7 @@ export default function SignIn() {
   return (
     <View style={styles.root}>
       <Text style={[styles.text, { marginTop: 50 }]} category="h1">
-        Match Manager
+        Mass Manager
       </Text>
       <View style={styles.formWrap}>
         <Input

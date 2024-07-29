@@ -1,16 +1,26 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, View, ScrollView } from "react-native";
+import AppBar from "@/components/appBar/appBar";
 
-type Props = {}
+import MealTable from "@/components/MealTable";
 
-const meal = (props: Props) => {
+export default function MealScreen() {
   return (
-    <View>
-      <Text>meal</Text>
-    </View>
-  )
+    <ScrollView style={styles.root}>
+      <View style={styles.container}>
+        {/* <AppBar /> */}
+        <View style={{ marginTop: 30 }} />
+        <MealTable />
+      </View>
+    </ScrollView>
+  );
 }
 
-export default meal
-
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+  },
+  container: {
+    paddingHorizontal: 15,
+    paddingVertical: 20,
+  },
+});

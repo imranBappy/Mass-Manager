@@ -1,6 +1,5 @@
 import { Link, Stack } from "expo-router";
 import { StyleSheet, View } from "react-native";
-
 import { Text } from "@ui-kitten/components";
 
 export default function NotFoundScreen() {
